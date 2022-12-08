@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="https://favicon-generator.org/favicon-generator/htdocs/favicons/2014-11-22/af213d60ab5aed16b4cdf8e521146ec1.ico">
+  <title>Live Radio Dayz</title>
+</head>
+
+<body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<center>
+	<a href="https://steamcommunity.com/app/221100/workshop/"><img style="height:150px;" src="logo.png"/></a>
+</center>
+
+<br>
+<br>
+<br>
+
+<center>
+  <div class="container">
+     <div class="card">
+       <div class="face face1">
+         <div class="content">
+			<a><img style="height:150px;" src="img\1.png"/></a>
+            <h3>Back to 90x</h3>
+			<audio id="myaudio" src="Radio90.ogg"></audio>
+			<button class="btn" onclick="settime()">Play</button>
+         </div>
+       </div>
+    </div>
+    
+     <div class="card">
+       <div class="face face1">
+         <div class="content">
+			<a><img style="height:150px;" src="img\2.png"/></a>
+            <h3>Radio Rock</h3>
+			<audio id="myaudio" src="Radio90.ogg"></audio>
+			<button class="btn" onclick="settime()">Play</button>
+         </div>
+       </div>
+    </div>
+    
+    
+     <div class="card">
+       <div class="face face1">
+         <div class="content">
+			<a><img style="height:150px;" src="img\3.png"/></a>
+            <h3>Radio 80x</h3>
+			<audio id="myaudio" src="Radio90.ogg"></audio>
+			<button class="btn" onclick="settime()">Play</button>
+         </div>
+       </div>
+    </div>
+	
+	
+     <div class="card">
+       <div class="face face1">
+         <div class="content">
+			<a><img style="height:150px;" src="img\4.png"/></a>
+            <h3>West Coast Classics</h3>
+			<audio id="myaudio" src="Radio90.ogg"></audio>
+			<button class="btn" onclick="settime()">Play</button>
+         </div>
+       </div>
+    </div>
+    
+     <div class="card">
+       <div class="face face1">
+         <div class="content">
+			<a><img style="height:150px;" src="img\5.png"/></a>
+            <h3>HardCore Radio</h3>
+			<audio id="myaudio" src="Radio90.ogg"></audio>
+			<button class="btn" onclick="settime()">Play</button>
+         </div>
+       </div>
+    </div>
+    
+    
+     <div class="card">
+       <div class="face face1">
+         <div class="content">
+			<a><img style="height:150px;" src="img\6.png"/></a>
+            <h3>ChillOut Radio</h3>
+			<audio id="myaudio" src="Radio90.ogg"></audio>
+			<button class="btn" onclick="settime()">Play</button>
+         </div>
+       </div>
+    </div>
+	
+  </div>
+</center>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<article>
+    <footer>
+        <h3>Lowner.dev - Bastard.info</h3>
+    </footer>
+    <footer>
+        <p>Background art - Welliton</p>
+    </footer>
+</article>
+
+<script src="https://kit.fontawesome.com/95a02bd20d.js"></script>
+<script type="text/javascript">
+    
+	var data = new Date();  
+	var time  = (data.getHours()*360) + (data.getMinutes()*60) + data.getSeconds();//3600
+	document.getElementById('display').innerHTML = time;  
+	
+    function settime(){
+      var audio= document.getElementById("myaudio");
+      audio.currentTime=time;
+      audio.play();
+      
+    }
+</script>
+
+</body>
+</html>
